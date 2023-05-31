@@ -11,11 +11,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Stock Prices</title>
 
+        <!-- Подключаем CSS-стили -->
+        <link rel="stylesheet" href="styles/main.css">
+
+        <!-- Подключаем шрифты -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     </head>
 
     <!-- Содержимое страницы -->
-    <body>
-        Stock Prices
+    <body class="body">
+
+        <!-- Хэдер -->
+        <header class="header">
+
+            <!-- Заголовок -->
+            <h1 class="title">Узнать стоимость акций компании на Московской бирже</h1>
+
+            <!-- Форма для ввода тикера компании -->
+            <form class="form">
+
+                <!-- Поле для ввода тикера компании -->
+                <input class="input" type="text" placeholder="Введите тикер компании">
+
+                <!-- Кнопка поиска -->
+                <button class="button">Найти</button>
+
+            </form>
+
+        </header>
+
     </body>
 
 </html>
