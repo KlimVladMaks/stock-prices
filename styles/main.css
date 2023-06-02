@@ -1,14 +1,47 @@
 /* Импортируем дополнительные CSS-стили для сброса стилей для HTML CSS вёрстки нового проекта*/
 @import "./reset.css";
 
+/* Создаём переменные */
+:root {
+
+    /* Красный */
+    --red: #FE4040;
+
+    /* Тёмно-красный */
+    --dark-red: #5C0000;
+
+    /* Белый */
+    --white: #FFFFFF;
+}
+
+/* Главные контейнеры сайта */
+html,
+body {
+
+    /* Высота */
+    min-height: 100vh;
+}
+
 /* Содержимое страницы */
 .body {
+
+    /* Превращаем элемент во флекс-контейнер */
+    display: flex;
+
+    /* Выравниваем элементы по колонкам */
+    flex-direction: column;
+
+    /* Прижимаем крайне элементы к краям */
+    justify-content: space-between;
+
+    /* Выравниваем элементы по центру */
+    align-items: center;
 
     /* Шрифт */
     font-family: 'Roboto', sans-serif;
 
     /* Цвет фона */
-    background-color: #FFFFFF;
+    background-color: var(--white);
 }
 
 /* Хэдер */
@@ -33,14 +66,14 @@
     width: 100%;
 
     /* Цвет фона */
-    background-color: #FE4040;
+    background-color: var(--red);
 }
 
 /* Заголовок */
 .title {
 
     /* Цвет */
-    color: #FFFFFF;
+    color: var(--white);
 
     /* Начертание шрифта */
     font-weight: 700;
@@ -74,7 +107,7 @@
     margin-bottom: 30px;
 
     /* Цвет фона */
-    background-color: #FFFFFF;
+    background-color: var(--white);
 
     /* Закругление углов */
     border-radius: 6px;
@@ -96,7 +129,7 @@
     font-size: 20px;
 
     /* Цвет текста */
-    color: #5C0000;
+    color: var(--dark-red);
 }
 
 /* Кнопка */
@@ -109,7 +142,7 @@
     height: 100%;
 
     /* Фон */
-    background: #5C0000;
+    background: var(--dark-red);
 
     /* Закругление углов */
     border-radius: 6px;
@@ -121,5 +154,40 @@
     font-size: 23px;
 
     /* Цвет текста */
-    color: #FFFFFF;
+    color: var(--white);
 }
+
+/* Футер */
+.footer {
+
+    /* Ширина */
+    width: 100%;
+
+    /* Внутренние отступы */
+    padding: 10px 0;
+
+    /* Выравнивание текста */
+    text-align: center;
+
+    /* Цвет фона */
+    background-color: var(--red);
+}
+
+/* Ссылка в футере */
+.footer a {
+
+    /* Цвет текста */
+    color: var(--white);
+
+    /* Начертание шрифта */
+    font-weight: 700;
+
+    /* Размер текста */
+    font-size: 20px;
+
+    /* Убираем декорирование текста */
+    text-decoration: none;
+}
+
+
+
