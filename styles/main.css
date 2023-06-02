@@ -10,9 +10,14 @@
     /* Тёмно-красный */
     --dark-red: #5C0000;
 
+    /* Светло-красный */
+    --light-red: #FFAAAA;
+
     /* Белый */
     --white: #FFFFFF;
 }
+
+/*! СТРАНИЦА */
 
 /* Главные контейнеры сайта */
 html,
@@ -43,6 +48,8 @@ body {
     /* Цвет фона */
     background-color: var(--white);
 }
+
+/*! ХЭДЕР */
 
 /* Хэдер */
 .header {
@@ -110,7 +117,7 @@ body {
     background-color: var(--white);
 
     /* Закругление углов */
-    border-radius: 6px;
+    border-radius: 5px;
 }
 
 /* Поле для ввода тикера компании */
@@ -145,7 +152,7 @@ body {
     background: var(--dark-red);
 
     /* Закругление углов */
-    border-radius: 6px;
+    border-radius: 5px;
 
     /* Начертание шрифта */
     font-weight: 700;
@@ -156,6 +163,98 @@ body {
     /* Цвет текста */
     color: var(--white);
 }
+
+/*! КАРТОЧКА */
+
+/* Карточка с информацией об акции */
+.card {
+
+    /* Превращаем элемент во флекс-контейнер */
+    display: flex;
+
+    /* Выстраиваем флекс-элементы в колонну */
+    flex-direction: column;
+
+    /* Равномерно распределяем элементы */
+    justify-content: space-evenly;
+
+    /* Выравниваем флекс-элементы по центру */
+    align-items: center;
+
+    /* Минимальная ширина */
+    min-width: 350px;
+
+    /* Минимальная высота */
+    min-height: 200px;
+
+    /* Цвет фона */
+    background-color: var(--light-red);
+
+    /* Закругление углов */
+    border-radius: 5px;
+}
+
+/* Тикер и название компании */
+.company-info {
+
+    /* Размер текста */
+    font-size: 30px;
+
+    /* Начертание шрифта */
+    font-weight: 700;
+
+    /* Цвет текста */
+    color: var(--dark-red);
+
+    /* Внешние отступы */
+    margin: 0px 50px;
+}
+
+/* Тикер компании */
+.company-info span {
+
+    /* Блочно-строчное отображение */
+    display: inline-block;
+
+    /* Размер текста */
+    font-size: 20px;
+
+    /* Внутренние отступы */
+    padding: 5px 10px;
+
+    /* Внешний правый отступ */
+    margin-right: 15px;
+
+    /* Выравнивание элемента по верху текста */
+    vertical-align: text-top;
+
+    /* Цвет текста */
+    color: var(--white);
+
+    /* Цвет фона */
+    background-color: var(--red);
+
+    /* Закругление углов */
+    border-radius: 5px;
+}
+
+/* Цена акции */
+.price {
+
+    /* Размер текста */
+    font-size: 60px;
+
+    /* Начертание шрифта */
+    font-weight: 700;
+
+    /* Цвет текста */
+    color: var(--dark-red);
+
+    /* Внешние отступы */
+    margin: 0px 50px;
+}
+
+/*! ФУТЕР */
 
 /* Футер */
 .footer {
