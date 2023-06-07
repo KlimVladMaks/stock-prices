@@ -181,12 +181,6 @@ body {
     /* Выравниваем флекс-элементы по центру */
     align-items: center;
 
-    /* Минимальная ширина */
-    min-width: 350px;
-
-    /* Минимальная высота */
-    min-height: 200px;
-
     /* Цвет фона */
     background-color: var(--light-red);
 
@@ -207,7 +201,7 @@ body {
     color: var(--dark-red);
 
     /* Внешние отступы */
-    margin: 0px 50px;
+    margin: 25px 50px 15px 50px;
 }
 
 /* Тикер компании */
@@ -251,7 +245,7 @@ body {
     color: var(--dark-red);
 
     /* Внешние отступы */
-    margin: 0px 50px;
+    margin: 15px 50px 25px 50px;
 }
 
 /*! ФУТЕР */
@@ -287,6 +281,3 @@ body {
     /* Убираем декорирование текста */
     text-decoration: none;
 }
-
-
-

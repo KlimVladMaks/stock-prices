@@ -31,10 +31,10 @@
             <h1 class="title">Узнать стоимость акций компании на Московской бирже</h1>
 
             <!-- Форма для ввода тикера компании -->
-            <form class="form">
+            <form class="form" id="form">
 
                 <!-- Поле для ввода тикера компании -->
-                <input class="input" type="text" placeholder="Введите тикер компании">
+                <input class="input" id="input" type="text" placeholder="Введите тикер компании">
 
                 <!-- Кнопка поиска -->
                 <button class="button">Найти</button>
@@ -44,20 +44,7 @@
         </header>
 
         <!-- Контейнер для хранения карточки -->
-        <div class="card-container">
-
-            <!-- Карточка с информацией об акции -->
-            <div class="card">
-
-                <!-- Тикер и название компании -->
-                <p class="company-info"><span>SBER</span>Сбербанк</p>
-
-                <!-- Цена акции -->
-                <p class="price">245,36 ₽</p>
-
-            </div>
-
-        </div>
+        <div class="card-container" id="card-container"></div>
 
         <!-- Футер -->
         <footer class="footer">
@@ -66,6 +53,9 @@
             <a href="https://github.com/KlimVladMaks/stock-prices" target="_blank">GitHub</a>
 
         </footer>
+
+        <!-- Подключаем скрипты -->
+        <script src="scripts/main.js"></script>
 
     </body>
 
