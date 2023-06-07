@@ -60,7 +60,7 @@ function showCard(ticker, name, price) {
 function showError(ticker) {
 
     // Выводим сообщение об ошибке
-    alert(`Акции с тикером "${ticker.toUpperCase()}" не найдено.`);
+    alert(`Акций с тикером "${ticker.toUpperCase()}" не найдено.`);
 }
 
 // При отправке формы вызываем соответствующую функцию
